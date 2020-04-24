@@ -1,5 +1,5 @@
 // jshint esversion: 6
-//5
+//part 5
 let containsDuplicates = s => {
   let charCount = new Array(3).fill(0);
   let cArr = [0, 0, 0, 0],
@@ -8,24 +8,25 @@ let containsDuplicates = s => {
     code = s[i].toUpperCase().charCodeAt(0) - 65;
     //console.log(code);
     if (cArr[code] > 0) {
-      return true;
+      return false;
     } else {
       cArr[i]++;
     }
   }
-  return false;
+  return true;
 };
-//3a
-let revWords1 = (sent) => {
-  let arr = sent.split(" ");
+console.log(containsDuplicates("Od or Ev"));
+//part 3a
+let revWords1 = (str) => {
+  let arr = str.split("");
   let result = "";
-  for (var i = 0; i <arr.length; i++){
+  for (var i = 0; i < arr.length; i++){
     revWords1(arr[i]);
   }
   return result;
 };
 console.log(revWords1("Thursday"));
-//3b
+//part 3b
 //revWords2. Modify the function to use the Array.forEach method. 
 let revWords2 = (str) => {
   let arr = str.split("");
@@ -35,7 +36,8 @@ let revWords2 = (str) => {
   });
 return result;
 };
-//3c
+console.log(revWords2("Thursday"));
+//part 3c
 //revWords3. Use a for..of loop, and arrow syntax. 
 let revWords3 = (str) => {
   let arr = str.split("");
@@ -45,3 +47,4 @@ let revWords3 = (str) => {
   }
 return result;
 };
+console.log(revWords3("Thursday"));
