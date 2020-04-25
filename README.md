@@ -1,4 +1,4 @@
-##281 "Project 2 Learning Outcomes" 
+##"Project 2 Learning Outcomes" 
 1. Web APIs often deliver data formatted as JSON.
 2. A web API can be accessed programmatically using JavaScript.
 3. The API documentation must first be consulted in order to understand how the API works and what it returns.
